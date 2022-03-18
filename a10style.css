@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Smooch+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Open+Sans:wght@300&family=Smooch+Sans:wght@100&display=swap');
+
+
+header, nav, main, aside, footer {
+  padding: 1.0em;
+  border: 1px black solid;
+}
+
+body {
+    background: rgb(240, 239, 199);
+}
+
+header, footer {
+  text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+  
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-size: x-large;
+}
+    
+h1 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(150, 7, 7);
+}
+
+h2 {
+    font-family: 'Smooch+Sans', sans-serif;
+    color: blue;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+p {
+    font-family: 'Open-Sans', sans-serif;
+    color: black;
+    font-size: medium;
+}
+
+ol, ul {
+    padding: 20px 25px;
+    border-radius: 40px;
+}
+
+strong {
+    color: black;
+}
+
+em {
+    color: yellow;
+}
+
+.container {
+    margin: 0 auto;
+    background: rgb(175, 222, 176);
+    display: grid;
+    grid-template-columns:
+     1fr       2fr       1fr;
+    grid-template-areas:
+    "hd     hd     hd"
+    "navvy     navvy     navvy"
+    "sd1    main     sd2"
+    "foot     foot     foot";
+}
+  
+header {
+    grid-area: hd; 
+    background:rgb(254, 218, 175);
+}
+
+nav {
+    grid-area: navvy; 
+    background:rgb(232, 206, 236);
+}
+
+main {
+    grid-area: main; 
+    background: rgb(240, 234, 182); 
+    max-height: 100%;
+}
+
+#aside1 {
+    grid-area: sd1; 
+    background: rgb(241, 202, 174);
+}
+
+#aside2 {
+    grid-area: sd2; 
+    background: rgb(191, 226, 246);
+}
+
+footer {
+    grid-area: foot; 
+    background: rgb(171, 171, 171);
+}
